@@ -10,17 +10,9 @@
  * @since Flexopotamus 1.0
  */
 ?>
-	</div><!-- #main -->
 
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
-
-<?php
-	/* A sidebar in the footer? Yep. You can can customize
-	 * your footer with four columns of widgets.
-	 */
-	get_sidebar( 'footer' );
-?>
 
 			<div id="site-info">
 				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">

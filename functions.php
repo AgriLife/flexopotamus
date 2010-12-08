@@ -35,7 +35,6 @@ if ( ! function_exists( 'flexopotamus_setup' ) ):
  * @uses add_custom_background() To add support for a custom background.
  * @uses add_editor_style() To style the visual editor.
  * @uses load_theme_textdomain() For translation/localization support.
- * @uses register_default_headers() To register the default custom header images provided with the theme.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
  * @since Flexopotamus 1.0
@@ -265,7 +264,7 @@ function flexopotamus_comment( $comment, $args, $depth ) {
 endif;
 
 /**
- * Register widgetized areas, including two sidebars and four widget-ready columns in the footer.
+ * Register widgetized areas, including two sidebars and four widget-ready areas in the sidebar.
  *
  * To override flexopotamus_widgets_init() in a child theme, remove the action hook and add your own
  * function tied to the init hook.
@@ -297,8 +296,8 @@ function flexopotamus_widgets_init() {
 
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'flexopotamus' ),
-		'id' => 'first-footer-widget-area',
+		'name' => __( 'First Aside Widget Area', 'flexopotamus' ),
+		'id' => 'first-aside-widget-area',
 		'description' => __( 'The first footer widget area', 'flexopotamus' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
@@ -308,8 +307,8 @@ function flexopotamus_widgets_init() {
 
 	// Area 4, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'flexopotamus' ),
-		'id' => 'second-footer-widget-area',
+		'name' => __( 'Second Aside Widget Area', 'flexopotamus' ),
+		'id' => 'second-aside-widget-area',
 		'description' => __( 'The second footer widget area', 'flexopotamus' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
@@ -319,8 +318,8 @@ function flexopotamus_widgets_init() {
 
 	// Area 5, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'flexopotamus' ),
-		'id' => 'third-footer-widget-area',
+		'name' => __( 'Third Aside Widget Area', 'flexopotamus' ),
+		'id' => 'third-aside-widget-area',
 		'description' => __( 'The third footer widget area', 'flexopotamus' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
@@ -330,8 +329,8 @@ function flexopotamus_widgets_init() {
 
 	// Area 6, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'flexopotamus' ),
-		'id' => 'fourth-footer-widget-area',
+		'name' => __( 'Fourth Aside Widget Area', 'flexopotamus' ),
+		'id' => 'fourth-aside-widget-area',
 		'description' => __( 'The fourth footer widget area', 'flexopotamus' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',

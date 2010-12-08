@@ -52,5 +52,12 @@
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</ul>
 		</div><!-- #secondary .widget-area -->
+		
+<?php
+	/* A sidebar in the footer? Yep. You can customize
+	 * your footer with four columns of widgets.
+	 */
+	get_sidebar( 'widgets' );
+?>		
 
 <?php endif; ?>

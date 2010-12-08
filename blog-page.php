@@ -1,16 +1,18 @@
 <?php
 /**
- * The main template file.
+ * Template Name: Blog Page
  * @package WordPress
  */
 
 get_header(); ?>
 
-			<section id="content" role="main">
+		<div id="container">
+			<div id="content" role="main">
 
 			<?php get_template_part( 'loop', 'index' ); ?>
 			
-			</section><!-- #content -->
+			</div><!-- #content -->
+		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
