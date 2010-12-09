@@ -7,7 +7,8 @@
  * @since Flexopotamus 1.0
  */
 ?>
-
+<aside id="aside">
+	<div id="aside-widget-area-1">
 		<div id="primary" class="widget-area" role="complementary">
 			<ul class="xoxo">
 
@@ -52,7 +53,7 @@
 				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
 			</ul>
 		</div><!-- #secondary .widget-area -->
-		
+	</div><!-- #aside-widget-area1 -->		
 <?php
 	/* A sidebar in the footer? Yep. You can customize
 	 * your footer with four columns of widgets.
@@ -61,3 +62,4 @@
 ?>		
 
 <?php endif; ?>
+</aside>

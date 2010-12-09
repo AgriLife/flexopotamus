@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+		<section id="wrap">
+			<section id="content" role="main">
 
 				<h1 class="page-title"><?php
 					printf( __( 'Category Archives: %s', 'flexopotamus' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -27,8 +27,8 @@ get_header(); ?>
 				get_template_part( 'loop', 'category' );
 				?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+			</section><!-- #content -->
+		</section><!-- #wrap -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

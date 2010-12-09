@@ -23,7 +23,7 @@
 	// If we get this far, we have widgets. Let do this.
 ?>
 
-			<div id="aside-widget-area" role="complementary">
+			<div id="aside-widget-area-2" role="complementary">
 
 <?php if ( is_active_sidebar( 'first-aside-widget-area' ) ) : ?>
 				<div id="first" class="widget-area">
