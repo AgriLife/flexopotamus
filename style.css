@@ -201,6 +201,7 @@ pre {
 	line-height: 18px;
 	margin-bottom: 18px;
 	padding: 1.5em;
+	overflow: scroll;
 }
 
 abbr {
