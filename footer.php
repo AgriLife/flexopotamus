@@ -22,9 +22,9 @@
 
 			<div id="site-generator">
 				<?php do_action( 'flexopotamus_credits' ); ?>
-				<a href="<?php echo esc_url( __('http://wordpress.org/', 'flexopotamus') ); ?>"
+				<a href="<?php echo esc_url( __('https://github.com/indyplanets/flexopotamus', 'flexopotamus') ); ?>"
 						title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'flexopotamus'); ?>" rel="generator">
-					<?php printf( __('Proudly powered by %s.', 'flexopotamus'), 'WordPress' ); ?>
+					<?php printf( __('Powered by %s.', 'flexopotamus'), 'Flexopotamus' ); ?>
 				</a>
 			</div><!-- #site-generator -->
 
