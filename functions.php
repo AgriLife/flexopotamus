@@ -66,6 +66,20 @@ function flexopotamus_setup() {
 
 	// This theme allows users to set a custom background
 	add_custom_background();
+	
+	function load_js() {
+	        // instruction to only load if it is not the admin area
+		if ( !is_admin() ) { 
+		// register script location, dependencies and version with wp_register_script	
+	   	wp_register_script('flex_script',
+	       	get_bloginfo('template_directory') . '/js/flex.js',
+	       array('jquery'),
+	       '1.4.2' );
+	       // enqueue the jQuery flex script
+	   	wp_enqueue_script('flex_script');	
+		}	         
+	}    
+	add_action('init', 'load_js');
 }	
 endif;
 
