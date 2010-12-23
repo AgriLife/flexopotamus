@@ -1,3 +1,8 @@
+dojo.require('dojo.fx');
+
 dojo.addOnLoad(function(){
-   dojo.query('img').removeAttr('height');
+	
+	// remove all height attributes from images for flexibility	
+	dojo.query('img').removeAttr('height');
+
 });
