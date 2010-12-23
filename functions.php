@@ -70,13 +70,15 @@ function flexopotamus_setup() {
 	function load_js() {
 	        // instruction to only load if it is not the admin area
 		if ( !is_admin() ) { 
-		// register script location, dependencies and version with wp_register_script	
-	   	wp_register_script('flex_script',
-	       	get_bloginfo('template_directory') . '/js/flex.js',
-	       array('jquery'),
-	       '1.4.2' );
-	       // enqueue the jQuery flex script
-	   	wp_enqueue_script('flex_script');	
+		// register script location with wp_register_script	
+	   	wp_register_script('dojo',
+	       	get_bloginfo('template_directory') . '/js/dojo-1.5.0/dojo/dojo.js');
+	   	wp_register_script('my_dojo',
+	       	get_bloginfo('template_directory') . '/js/my_dojo.js');	
+	       // enqueue the dojo toolkit
+	   	wp_enqueue_script('dojo');	
+	       // enqueue the custom dojo js
+	   	wp_enqueue_script('my_dojo');	
 		}	         
 	}    
 	add_action('init', 'load_js');
