@@ -299,60 +299,18 @@ function flexopotamus_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+
+	// Area 3, located in the second sidebar.
 	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'flexopotamus' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'flexopotamus' ),
+		'name' => __( 'Aside Widget Area', 'flexopotamus' ),
+		'id' => 'aside-widget-area',
+		'description' => __( 'The aside widget area', 'flexopotamus' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
 
-	// Area 3, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'First Aside Widget Area', 'flexopotamus' ),
-		'id' => 'first-aside-widget-area',
-		'description' => __( 'The first footer widget area', 'flexopotamus' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 4, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Second Aside Widget Area', 'flexopotamus' ),
-		'id' => 'second-aside-widget-area',
-		'description' => __( 'The second footer widget area', 'flexopotamus' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 5, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Third Aside Widget Area', 'flexopotamus' ),
-		'id' => 'third-aside-widget-area',
-		'description' => __( 'The third footer widget area', 'flexopotamus' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 6, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Fourth Aside Widget Area', 'flexopotamus' ),
-		'id' => 'fourth-aside-widget-area',
-		'description' => __( 'The fourth footer widget area', 'flexopotamus' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 }
 /** Register sidebars by running flexopotamus_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'flexopotamus_widgets_init' );
