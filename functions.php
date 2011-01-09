@@ -67,18 +67,16 @@ function flexopotamus_setup() {
 	// This theme allows users to set a custom background
 	add_custom_background();
 	
+	
+	//Add jquery to theme
 	function load_js() {
 	        // instruction to only load if it is not the admin area
 		if ( !is_admin() ) { 
 		// register script location with wp_register_script	
-	   	wp_register_script('dojo',
-	       	get_bloginfo('template_directory') . '/js/dojo-1.5.0/dojo/dojo.js');
-	   	wp_register_script('my_dojo',
-	       	get_bloginfo('template_directory') . '/js/my_dojo.js');	
-	       // enqueue the dojo toolkit
-	   	wp_enqueue_script('dojo');	
-	       // enqueue the custom dojo js
-	   	wp_enqueue_script('my_dojo');	
+	   	wp_register_script('my_jquery',
+	       	get_bloginfo('template_directory') . '/js/my_jquery.js', array('jquery'), '1.0');	
+	       // enqueue the custom jquery js
+	   	wp_enqueue_script('my_jquery');	
 		}	         
 	}    
 	add_action('init', 'load_js');
